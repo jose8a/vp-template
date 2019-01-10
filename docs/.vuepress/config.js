@@ -27,13 +27,11 @@ const groupmeOptions = {
 
 
 module.exports = {
-  // --- head: [
-  // ---   ['link', { rel: 'stylesheet', href: '/logo.png' }]
-  // --- ],
   port: 3456,
   markdown: {
     toc: {
-      includeLevel: [1, 2, 3, 4, 5]
+      // includeLevel: [1, 2, 3, 4, 5]
+      includeLevel: [1, 2, 3]
     },
     config: md => {
       md.use(require('markdown-it-plantuml'));
@@ -49,7 +47,7 @@ module.exports = {
       { text: 'Markdown-it', link: 'https://markdown-it.github.io/' },
       { text: 'MD Cheatsheet', link: 'https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet' },
     ],
-    sidebarDepth: '2',
+    sidebarDepth: '1',
     sidebar: [
       {
         title: 'Examples',
