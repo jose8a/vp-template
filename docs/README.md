@@ -13,6 +13,27 @@ This is a Quickstart Documentation template based on Vuepress.
   * ..tbd
 
 
+### Getting started with this Documentation Starter
+
+```
+  git clone ..
+  cd vp-template
+  yarn install
+  yarn docs:dev
+
+```
+
+**Open browser to `http://localhost:3456` (change the localhost PORT if you changed it in config.js)**
+
+
+
+### To generate static files for deployment/production
+
+```
+  yarn docs:build
+```
+
+
 ---
 ### Markdown-It Installed Plugins
 
@@ -172,4 +193,6 @@ Edit this file to change the starter kit defaults, or add extra plugins and func
 **Other Style Overrides**
   * Add your custom colors into the `docs/.vuepress/style.styl` page
   * for more, look in the [Vuepress documentation](https://TODO)
+
+Adds modifications to the location of the TOC, in addition to some of it's default styling.
 
